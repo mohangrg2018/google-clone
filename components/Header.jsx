@@ -3,7 +3,7 @@ import { BsGrid3X3GapFill } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-end gap-5 py-3 p-4 text-sm">
+    <header className="flex items-center justify-end gap-5 py-3 px-4 text-sm">
       <Link href="/" className="hover:underline">
         Gmail
       </Link>

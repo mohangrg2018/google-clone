@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layout components {
-  .icon {
-    @apply hover:bg-gray-500 cursor-pointer;
+@layer components {
+  .link {
+    @apply hover:underline cursor-pointer;
   }
 }
