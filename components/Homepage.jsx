@@ -21,7 +21,7 @@ const Homepage = () => {
       `https://random-word-api.herokuapp.com/word`
     ).then((res) => res.json());
     if (!response) return;
-    router.push(`/search/web?searchTerm=${response}`);
+    router.push(`${response}`);
   };
 
   return (
