@@ -59,8 +59,8 @@ const layout = () => {
       <div className="md:flex items-center gap-5 hidden">
         <BsFillGearFill />
         <BsFillGrid3X3GapFill />
-        <button className="bg-blue-500 text-sm p-2 rounded-sm text-white">
-          Sign In
+        <button className="bg-blue-500 text-sm p-3 rounded-md text-white">
+          SignIn
         </button>
       </div>
     </header>

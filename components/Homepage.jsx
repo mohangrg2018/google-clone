@@ -29,7 +29,7 @@ const Homepage = () => {
       <Image src="/google.png" height={100} width={300} />
       <form
         onSubmit={handleSubmit}
-        className="flex items-center justify-between w-[40rem] border border-gray-200 py-2 px-3 rounded-full"
+        className="flex items-center justify-between w-[90%] sm:w-[80%] md:w-[60%] border border-gray-200 py-2 px-3 rounded-full"
       >
         <AiOutlineSearch className="text-xl text-gray-400" />
         <input
