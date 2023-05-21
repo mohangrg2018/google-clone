@@ -2,7 +2,7 @@ import CurrentAddress from "./CurrentAddress";
 
 const Footer = () => {
   return (
-    <footer className="w-full absolute bottom  bg-[#F2F2F2] text-sm">
+    <footer className="w-full absolute bottom bg-[#F2F2F2] text-sm">
       <CurrentAddress />
       <section className="flex flex-col gap-3 sm:flex-row justify-between items-center border-t border-gray-300 px-4 py-3">
         <ul className="flex gap-5">

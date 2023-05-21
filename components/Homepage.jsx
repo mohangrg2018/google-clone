@@ -25,7 +25,7 @@ const Homepage = () => {
   };
 
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center min-h-screen">
       <Image src="/google.png" height={100} width={300} />
       <form
         onSubmit={handleSubmit}

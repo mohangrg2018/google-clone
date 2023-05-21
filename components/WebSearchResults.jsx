@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import Pagination from "./Pagination";
 
 const WebSearchResults = ({ results }) => {
   return (
-    <div className="max-w-xs mx-auto sm:max-w-sm lg:max-w-6xl">
+    <div className="max-w-xs mx-auto sm:max-w-sm lg:max-w-6xl pb-20">
       <p className="text-gray-500 text-sm">
         About {results.searchInformation?.formattedTotalResults} results (
         {results.searchInformation?.formattedSearchTime} seconds)
@@ -21,6 +22,7 @@ const WebSearchResults = ({ results }) => {
           <p className="text-sm text-gray-800 mt-2">{result.snippet}</p>
         </div>
       ))}
+      <Pagination />
     </div>
   );
 };
