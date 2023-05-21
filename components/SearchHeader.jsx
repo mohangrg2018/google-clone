@@ -7,6 +7,7 @@ import { AiFillCamera, AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { BsFillGearFill, BsFillGrid3X3GapFill } from "react-icons/bs";
 import { HiMicrophone } from "react-icons/hi";
 import Link from "next/link";
+import SearchOptions from "./SearchOptions";
 
 const layout = () => {
   const searchParams = useSearchParams();
@@ -25,7 +26,7 @@ const layout = () => {
   };
 
   return (
-    <header className="m-4 flex items-center justify-between">
+    <header className="p-4 flex items-center justify-between">
       <div className="flex items-center gap-10 w-full">
         <Link href="/">
           <Image src="/google.png" width={150} height={100} />

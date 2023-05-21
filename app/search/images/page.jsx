@@ -1,10 +1,10 @@
-import WebSearchResults from "@components/WebSearchResults";
-import Link from "next/link";
+import ImageSearchResults from "@components/ImageSearchResults";
+import React from "react";
 
-const WebSearch = async ({ searchParams }) => {
+const page = async ({ searchParams }) => {
   const startIndex = searchParams.start || "1";
   const res = await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=${process.env.SEARCH_API_KEY}&cx=${process.env.CONTEXT_API}&q=${searchParams.searchTerm}&start=${startIndex}`
+    `https://www.googleapis.com/customsearch/v1?key=${process.env.SEARCH_API_KEY}&cx=${process.env.CONTEXT_API}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`
   );
   if (!res.ok) {
     throw new Error("Something went wrong");
@@ -23,7 +23,7 @@ const WebSearch = async ({ searchParams }) => {
       </div>
     );
   }
-  return <div>{results && <WebSearchResults results={data} />}</div>;
+  return <div>{results && <ImageSearchResults results={data} />}</div>;
 };
 
-export default WebSearch;
+export default page;
