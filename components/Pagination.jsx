@@ -10,7 +10,7 @@ const Pagination = () => {
   const searchTerm = searchParams.get("searchTerm");
   const startIndex = +searchParams.get("start") || 1;
   return (
-    <div className="text-blue-700 flex justify-between items-center sm:justify-start sm:gap-20">
+    <div className="text-blue-700 flex justify-between items-center sm:justify-start sm:gap-20 py-6 mx-5">
       {startIndex >= 10 && (
         <Link
           href={`${pathname}?searchTerm=${searchTerm}&start=${startIndex - 10}`}
